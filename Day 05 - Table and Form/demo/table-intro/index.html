@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Table Introduction</title>
+	<style>
+		#custom-table tr {
+			border-bottom: 1px solid black;
+		}
+		#custom-table tr:nth-child(2n){
+			background-color: aqua;
+		}
+		#custom-table td:nth-child(2n+1) {
+			background-color: blueviolet;
+		}
+		#cv-table tr:nth-child(2n) {
+			/* background-color: lightcyan; */
+		}
+		/* #cv-table tr td {
+			border-bottom: 1px solid #D6EEEE;
+			border-top: 1px solid #D6EEEE;
+		} */
+	</style>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<div class="container">
+			<!-- Table 01-->
+			<table bgcolor="#ffaaee" border="1" cellspacing="5" cellpadding="10" width="100%">
+				<tr>
+					<th>Name</th>
+					<th>DoB</th>
+					<th>Gender</th>
+				</tr>
+				<tr>
+					<td>Nguyen Van Nam</td>
+					<td>21 - 09 - 1999</td>
+					<td>Male</td>
+				</tr>
+			</table>
+			<br><br>
+			<!-- End of table -->
+			<!-- Custom table -->
+			<table id="custom-table" border="1px">
+				<tr>
+					<th colspan="2">Full name</th>
+					<th rowspan="2">Point</th>
+				</tr>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+				<tr>
+					<td>Peter</td>
+					<td>Pan</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>Mary</td>
+					<td>Jane</td>
+					<td>80</td>
+				</tr>
+			</table>
+			<br /><br />
+			<!-- End custom table -->
+			<!-- CV format -->
+			<table id="cv-table" width="100%" cellpadding="5" cellspacing="0" border="1px solid #D6EEEE">
+				<tr>
+					<td><b>Ho va ten</b></td>
+					<td>Nguyen Van Nam</td>
+				</tr>
+				<tr>
+					<td>Dia chi</td>
+					<td>
+						Ha noi
+					</td>
+				</tr>
+				<tr>
+					<td>Dinh huong phat trien ban than</td>
+					<td>dshaj jkashjk xjk hjsk bnjsnjksh jksb jkjkds</td>
+				</tr>
+			</table>
+		</div>
+	</main>
+	<footer></footer>
+</body>
+
+</html>
