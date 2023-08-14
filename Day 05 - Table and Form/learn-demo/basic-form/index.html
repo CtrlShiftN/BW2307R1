@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic form</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h2>Order Form</h2>
+        <form action="#" method="post">
+            <p>What would you like to buy?</p>
+            <select name="goods" id="goods">
+                <option value="book">Book</option>
+                <option value="pen">Pen</option>
+                <option value="board">Board</option>
+            </select>
+            <br>
+            <p>How many would you like to order?</p>
+            <input type="radio" name="amount" value="1"> 1 - $10 <br>
+            <input type="radio" name="amount" value="2"> 2 - $20 <br>
+            <input type="radio" name="amount" value="3"> 3 - $25 <br>
+            <p>Name</p>
+            <input type="text" placeholder="FirstName" name="firstname">
+            <input type="text" placeholder="LastName" name="lastname">
+            <p>Email</p>
+            <input type="email" name="email">
+            <p>Phone number</p>
+            <input type="number" name="tel-first"> - 
+            <input type="number" name="tel-middle"> - 
+            <input type="number" name="tel-last">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
