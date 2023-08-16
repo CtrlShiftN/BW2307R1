@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            font-weight: 600;
+        }
+
+        div>p {
+            color: red;
+        }
+
+        h1+p {
+            text-align: center;
+        }
+
+        ul~p {
+            background: #ccc;
+        }
+
+        .login-button:hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello</h1>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <ul>
+            <li>
+                <p>This is an ul paragraph</p> This is an item
+            </li>
+            <li>This is an item</li>
+        </ul>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <button class="login-button">This is a button</button>
+    </div>
+</body>
+
+</html>

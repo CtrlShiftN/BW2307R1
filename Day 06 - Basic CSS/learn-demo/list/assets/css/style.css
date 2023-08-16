@@ -1,0 +1,12 @@
+.c {
+    background-color: #ff999a;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    /* list-style-type: square; */
+}
+.c li {
+    background-color: #ffe5e4;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+}
