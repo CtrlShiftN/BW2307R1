@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Box model 01 */
+        .box-model {
+            background-color: #63abcb;
+            width: 200px;
+            border: 20px dashed #ce5c5b;
+            padding: 35px;
+            margin: 30px;
+        }
+        /* Box model 02 */
+        .circle {
+            box-shadow: inset 0 0 20px indianred;
+            width: 75px;
+            padding: 35px;
+            border-radius: 50%;
+            /* border: 1px solid black;
+            background: radial-gradient(circle, white, indianred); */
+        }
+        .circle .rect {
+            box-shadow: inset 0 0 20px seagreen;
+            padding: 50px 25px;
+            border-radius: 5px;
+            /* border: 1px solid black;
+            background: radial-gradient(circle, white, seagreen); */
+        }
+        .shapes {
+            margin-bottom: 30px;
+        }
+        /* Box model 03 */
+        .rect-outside {
+            padding: 32px 30px;
+            border: 5px solid black;
+            border-radius: 6%;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .rect-outside .rect-left {
+            border: 5px solid purple;
+            padding: 30px 70px;
+            display: inline;
+            border-radius: 38%;
+        }
+        .rect-outside .rect-right {
+            display: inline;
+            border: 5px solid brown;
+            padding: 30px 70px;
+            border-radius: 38%;
+            margin-left: -9px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Box model 01 -->
+    <div class="box-model">
+        Content demo box
+    </div>
+    <!-- Box model 02 -->
+    <div class="shapes">
+        <div class="circle">
+            <div class="rect"></div>
+        </div>
+    </div>
+    <!-- Box model 03 -->
+    <div class="rect-outside">
+        <div class="rect-left"></div>
+        <div class="rect-right"></div>
+    </div>
+</body>
+
+</html>
