@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d-none {
+            display: none;
+        }
+
+        .inline {
+            display: inline;
+            border: 1px solid red;
+            margin: 20px;
+            padding: 20px;
+            width: 200px; /* Not working */
+            height: 100px; /* Not working */
+            line-height: 2rem;
+        }
+        .block {
+            display: block;
+            border: 1px solid blue;
+            margin: 20px;
+            padding: 20px;
+            width: 50px;
+        }
+        .inline-block {
+            display: inline-block;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+            width: 100px;
+        }
+        .d-flex {
+            display: flex;
+            flex-direction: row-reverse;
+            border: 1px solid orange;
+        }
+        .d-inline-flex {
+            display: inline-flex;
+            border: 1px solid green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1 class="d-none">
+            Do you believe in Magic? If not, can you see me????
+        </h1>
+        <p>
+            In CSS, the display property is used to determine the type of
+            rendering box for an element. The three most commonly used values
+            for this property are "inline," "block," and "inline-block." When an
+            element has a display
+            <span class="inline">value of "inline"</span> it will be rendered as
+            an inline-level box, which means it will flow within the text of the
+            document and will not create a new line. It is the default value for
+            many HTML elements such as span, a, em, and strong tags. On the
+            other hand, an element with a display value of "block" will be
+            rendered as <span class="block">a block-level box,</span> which
+            means it will create a new line and take up the full width of its
+            parent container by default. This is the default value for elements
+            such as div, h1-h6, and p tags. Finally, an element with
+            <span class="inline-block">a display value of "inline-block" </span>
+            will be rendered as an inline-level box that allows for the setting
+            of width and height properties, while still being able to respect
+            margins and padding in the horizontal direction.
+        </p>
+        <div class="d-flex">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+        </div>
+        <div class="d-inline-flex">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
