@@ -1,0 +1,30 @@
+.menu {
+    list-style-type: none;
+    background-color: #333;
+    padding-left: 0;
+}
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.menu li a {
+    color: aliceblue;
+    font-weight: 800;
+    text-decoration: none;
+}
+.menu li:hover {
+    background-color: red;
+}
+.sub-menu {
+    position: absolute;
+    padding-left: 0;
+    top: 2.5rem;
+    left: 0;
+    background-color: #333;
+    display: none;
+}
+.menu li:hover .sub-menu {
+    display: block;
+}

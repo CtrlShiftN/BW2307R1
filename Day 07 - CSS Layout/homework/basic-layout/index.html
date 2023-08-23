@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        header,
+        nav,
+        footer {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        header {
+            background: #27ae60;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #27ae60;
+            padding: 10px;
+        }
+        .w-65 {
+            width: 65%;
+        }
+        .w-35 {
+            width: 35%;
+        }
+        .w-100 {
+            width: 100%;
+        }
+        .p-300 {
+            padding: 50px;
+        }
+        footer {
+            background-color: aqua;
+            padding: 10px;
+        }
+        #content tr td {
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        &#60;header&#62;
+    </header>
+    <nav>
+        &#60;nav&#62;
+    </nav>
+    <main>
+        <table id="content" class="w-100" cellspacing="5px">
+            <tr>
+                <td class="w-65 p-300">&#60;section&#62;</td>
+                <td class="w-35" rowspan="2">&#60;aside&#62;</td>
+            </tr>
+            <tr>
+                <td class="p-300">&#60;article&#62;</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        &copy; &#60;footer&#62;. All rights...
+    </footer>
+</body>
+
+</html>
