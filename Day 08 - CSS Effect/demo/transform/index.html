@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        .translate {
+            transform: translate(200px, 50px);
+        }
+
+        .rotate {
+            transform: rotate(20deg);
+        }
+
+        .m-180 {
+            margin: 180px;
+        }
+
+        .scale {
+            transform: scale(2, 3);
+            /* scaleX(2) scaleY(3) */
+        }
+
+        .skew {
+            transform: skew(20deg, 10deg);
+            /* skewX(20deg) skewY(10deg) */
+        }
+
+        .non-translate {
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+        }
+
+        .translated {
+            transform: matrix(0.5, 0.5, 0, 1, 150, 0);
+        }
+        /* 3D Transform */
+        .rotate-x {
+            transform: rotateX(120deg);
+        }
+        .rotate-y {
+            transform: rotateY(50deg);
+        }
+        .rotate-z {
+            transform: rotateZ(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>2D Tranformation</h2>
+        <div class="box translate"></div>
+        <div class="box rotate"></div>
+        <div class="box scale m-180"></div>
+        <div class="box skew"></div>
+        <div class="box matrix non-translate"></div>
+        <div class="box matrix translated"></div>
+        <h2>3D Tranformation</h2>
+        <div class="box"></div>
+        <div class="box rotate-x"></div>
+        <div class="box rotate-y"></div>
+        <div class="box rotate-z"></div>
+    </div>
+</body>
+
+</html>

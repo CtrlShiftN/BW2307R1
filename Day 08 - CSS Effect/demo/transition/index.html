@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .transition-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s; */
+            transition: width 2s linear 1s;
+        }
+
+        .transition-box:hover {
+            width: 300px;
+            background-color: aqua;
+        }
+
+        /* Transform + transition */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 30px;
+            transition: all 0.5s ease;
+        }
+
+        .scale:hover {
+            transform: scale(2);
+        }
+
+        .rotate:hover {
+            transform: rotate(45deg);
+        }
+
+        .translate:hover {
+            transform: translate(50px, 50px);
+        }
+
+        .skew:hover {
+            transform: skew(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="transition-box">
+
+        </div>
+    </div>
+    <hr>
+    <div class="tranform-demo">
+        <div class="box scale"></div>
+        <div class="box rotate"></div>
+        <div class="box translate"></div>
+        <div class="box skew"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            padding: 50px;
+            background-color: red;
+            display: inline-block;
+            position: relative;
+            animation: box-move 5s linear 2s infinite alternate;
+        }
+
+        @keyframes box-move {
+            0% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 250px;
+                top: 0;
+            }
+
+            50% {
+                background-color: blue;
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                background-color: greenyellow;
+                top: 250px;
+                left: 0;
+            }
+
+            100% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS Animation</h1>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

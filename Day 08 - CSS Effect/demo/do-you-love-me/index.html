@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love You</title>
+    <style>
+        #catch-me-if-you-can {
+            position: relative;
+        }
+
+        /* #catch-me-if-you-can:hover {
+            top: 200px;
+            left: 200px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Do you love me?</h1>
+        <button id="confirm-btn">Yes</button>
+        <button id="catch-me-if-you-can">No</button>
+    </div>
+    <script>
+        // TODO
+        let btn = document.getElementById("catch-me-if-you-can");
+        let confirmBtn = document.getElementById("confirm-btn");
+        btn.addEventListener('mouseenter', function () {
+            console.log(this);
+            let top = Math.random() * window.innerHeight;
+            let left = Math.random() * window.innerWidth;
+            this.style['top'] = `${top}px`;
+            this.style['left'] = `${left}px`;
+        })
+        confirmBtn.addEventListener('click', () => {
+            alert("I knew. I love you, too")
+        })
+    </script>
+</body>
+
+</html>
