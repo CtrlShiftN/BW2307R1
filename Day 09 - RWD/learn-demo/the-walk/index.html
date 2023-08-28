@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 1rem;
+            /* border: 1px solid red; */
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        body {
+            font-family: Verdana;
+        }
+
+        .img-fluid {
+            width: 100%;
+        }
+
+        .sidebar-link {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .sidebar-link li {
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border-bottom: solid #f1f1f1 1px;
+        }
+
+        .content {
+            padding: 0 20px;
+        }
+
+        .right-sidebar {
+            background-color: lightblue;
+            padding: 10px 15px;
+        }
+
+        header {
+            background-color: #f1f1f1;
+            padding: 1rem;
+        }
+
+        @media screen and (min-width: 700px) {
+            .right-sidebar {
+                background-color: greenyellow;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .left-sidebar,
+            .content,
+            .right-sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cinque Terre</h1>
+        <h3>Resize the browser window</h3>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 left-sidebar">
+                    <ul class="sidebar-link">
+                        <li>The Walk</li>
+                        <li>Transport</li>
+                        <li>History</li>
+                        <li>Gallery</li>
+                    </ul>
+                </div>
+                <div class="col-6 content">
+                    <h2>The Walk</h2>
+                    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an
+                        hour depending on the weather conditions and your physical shape.</p>
+                    <img class="img-fluid" src="assets/media/images/vast-universe.png" alt="Vast Universe">
+                </div>
+                <div class="col-3 right-sidebar">
+                    <h2>What?</h2>
+                    <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.
+                    </p>
+                    <h2>Where?</h2>
+                    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+                    <h2>Price?</h2>
+                    <p>The Walk is free!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
