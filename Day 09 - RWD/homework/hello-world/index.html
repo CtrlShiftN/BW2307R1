@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #aaa;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 1rem;
+            /* border: 1px solid red; */
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        header {
+            background-color: #e5e5e5;
+            padding: 1.25rem;
+        }
+
+        .m-0 {
+            margin: 0;
+        }
+
+        .left-sidebar__links {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .left-sidebar__links li {
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            background-color: #e5e5e5;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .left-sidebar__links li a {
+            color: black;
+        }
+
+        .right-sidebar {
+            background-color: #e5e5e5;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #e5e5e5;
+        }
+
+        .my-1 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .p-0 {
+            padding: 0;
+        }
+
+        footer {
+            padding: 0.75rem;
+        }
+
+        /* Mobile */
+        @media screen and (max-width: 767px) {}
+
+        /* Tablet */
+        @media screen and (min-width: 768px) {
+            .col-md-2 {
+                width: 16.66%;
+            }
+
+            .col-md-10 {
+                width: 83.33%;
+            }
+
+        }
+
+        /* PC */
+        @media screen and (min-width: 1200px) {
+            .col-lg-2 {
+                width: 16.66%;
+            }
+
+            .col-lg-3 {
+                width: 25%;
+            }
+
+            .col-lg-7 {
+                width: 58.33%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Hello World</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-2 col-lg-2 left-sidebar p-0 my-1">
+                    <ul class="left-sidebar__links">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-10 col-lg-7">
+                    <h2>Lorum Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem deleniti
+                        veniam nobis sit porro odio, non possimus, illum iste sapiente eaque et iusto ad voluptate
+                        libero perferendis voluptas ab.</p>
+                </div>
+                <div class="col-12 col-lg-3 right-sidebar my-1">
+                    <h2 class="m-0">About</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore a dolore voluptatum! Odio
+                        placeat, deserunt asperiores expedita doloremque reprehenderit explicabo nulla perferendis
+                        inventore, soluta nobis ex est voluptate culpa.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; QuyenNV.
+    </footer>
+</body>
+
+</html>
