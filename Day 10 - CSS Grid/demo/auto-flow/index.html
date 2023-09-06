@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid auto flow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+            font: 110%/1.6 system-ui;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background-color: #1b1b1b;
+            padding: 2rem max(1rem, 5vw);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(8, 8vw);
+            grid-template-rows: repeat(8, 8vw);
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery li {
+            list-style-type: none;
+            padding: 5px;
+            background-color: #fff;
+            border-radius: 15%;
+            box-shadow: 0.3px 0.5px 0.7px hsl(0deg 0% 0% / 0.36),
+                0.8px 1.6px 2px -0.8px hsl(0deg 0% 0% / 0.36),
+                2.1px 4.1px 5.2px -1.7px hsl(0deg 0% 0% / 0.36),
+                5px 10px 12.6px -2.5px hsl(0deg 0% 0% / 0.36);
+        }
+
+        .gallery li:nth-child(2),
+        .gallery li:nth-child(4),
+        .gallery li:nth-child(6) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+
+        .control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .control select {
+            font: inherit;
+        }
+
+        .control span {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="control">
+        <span>grid-auto-flow: </span>
+        <select name="" id="select">
+            <option value="row" selected>row</option>
+            <option value="column">column</option>
+            <option value="dense">dense</option>
+            <option value="row dense">row dense</option>
+            <option value="column dense">column dense</option>
+        </select>
+    </div>
+    <ul class="gallery">
+        <li>
+            <img src="https://source.unsplash.com/random?iran" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?greece" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?dance" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?usa" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?spain" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?italy" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?france" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?china" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?japan" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?uk" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?england" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?cuba" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?amazon" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?germany" alt="" />
+        </li>
+        <li>
+            <img src="https://source.unsplash.com/random?canada" alt="" />
+        </li>
+    </ul>
+    <script>
+        var gallery = document.querySelector(".gallery");
+        var select = document.querySelector("#select");
+        select.addEventListener("change", function (e) {
+            gallery.style.gridAutoFlow = e.target.value;
+        });
+    </script>
+</body>
+
+</html>

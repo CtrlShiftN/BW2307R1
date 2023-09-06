@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Items</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-auto-flow: column dense;
+        }
+
+        .item {
+            background-color: #ccc;
+            padding: 1rem;
+            /* align-self: center;
+            justify-self: center; */
+        }
+
+        .item-1 {
+            background-color: red;
+        }
+
+        .item-2 {
+            background-color: blue;
+        }
+
+        .item-3 {
+            background-color: green;
+        }
+
+        .item-4 {
+            background-color: yellow;
+        }
+
+        .item-5 {
+            background-color: pink;
+        }
+
+        .item-6 {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+    </div>
+</body>
+
+</html>

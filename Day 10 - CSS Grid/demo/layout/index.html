@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid demo</title>
+    <style>
+        header,
+        footer {
+            background-color: #0069ff;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 15% 1fr 15%;
+            grid-gap: 10px;
+            padding: 15px 0;
+        }
+
+        main .grid-item {
+            text-align: center;
+            padding: 25vh 0;
+            color: white;
+        }
+
+        .bg-light-blue {
+            background-color: lightblue;
+        }
+
+        .bg-light-grey {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <h2>Header</h2>
+        </header>
+        <main>
+            <div class="grid-item bg-light-blue">
+                <p>Nav</p>
+            </div>
+            <div class="grid-item bg-light-grey">
+                <p>Main Content</p>
+            </div>
+            <div class="grid-item bg-light-blue">
+                <p>Sidebar</p>
+            </div>
+        </main>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>
