@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header,
+        footer {
+            background-color: lightblue;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            flex-basis: 200px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .content {
+            flex-grow: 1;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <main>
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
